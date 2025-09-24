@@ -1,0 +1,36 @@
+## Problem Link
+[650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard)
+
+
+## Brainstroming
+
+### How is it DP?
+
+### Sub-problem
+
+If I know solution of n - 1 do I know solution of n?
+
+If I know solution of n do I know solution of n + 1?
+
+Suppose I've min count for 6
+
+for 7 the min count would be minCount(6) + ?
+
+**Because this is missing the other variable, which is what's on the clipboard we need to apply double dimensional DP.**
+
+one dimension is number of desired A.
+second dimension is what's on the clipboard.
+
+What's on the clipboard in worst case can be equal to n.
+
+Hence, the DP matrix will be n x n.
+
+|   | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|
+| 0 | 0 | 2 | 4 | 6 |
+| 1 | 0 | 1 |   |   |
+| 2 | 0 |   |   |   |
+| 3 | 0 |   |   |   |
+
+
+

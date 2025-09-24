@@ -2,11 +2,11 @@
 
 void printBinaryRepresentation(int);
 
-//int main() {
-//    printBinaryRepresentation(pow(2, 0));
-//
-//    return 0;
-//}
+int main() {
+   printBinaryRepresentation(pow(2, 0));
+
+   return 0;
+}
 
 void printBinaryRepresentation(int n) {
     string binary_string = getBinaryRepresentation(n);
